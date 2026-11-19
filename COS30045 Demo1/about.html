@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Page setup & metadata -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - EnergyWatch AU</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="./assets/img/PowerIcon.png" alt="Power Logo" class="logo">
+                    <span>EnergyWatch AU</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="televisions.html">Televisions</a></li>
+                <li><a href="about.html" class="active">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero banner header -->
+        <section class="hero">
+            <h1>About EnergyWatch AU</h1>
+            <p class="subtitle">Promoting energy literacy and practical household savings across Australia through transparent data.</p>
+        </section>
+
+        <!-- Mission statement -->
+        <section class="content-section">
+            <h2>Our Mission</h2>
+            <p>EnergyWatch AU is dedicated to guiding consumers toward smarter appliance choices. We analyze energy consumption data from official registration databases to highlight practical ways households can lower power bills without compromising on entertainment quality or comfort.</p>
+            <p>With electricity tariffs rising across Australian states, appliance selection plays a pivotal role in long-term budget sustainability.</p>
+        </section>
+
+        <!-- Data source & dataset summary -->
+        <section class="content-section highlight-box">
+            <h2>Data & Methodology</h2>
+            <p>Our television efficiency report is driven by real-world data from official Australian registration databases (<code>tv_2026_02_15.csv</code>):</p>
+            <ul>
+                <li><strong>Sample Size:</strong> 4,508 individual TV model registrations evaluated.</li>
+                <li><strong>Size Categorization (KNIME Standard Rules):</strong>
+                    <ul>
+                        <li><strong>Small:</strong> ≤ 43 inches (1,111 models | Avg: 158.11 kWh/year)</li>
+                        <li><strong>Medium:</strong> 44 – 65 inches (2,059 models | Avg: 404.68 kWh/year)</li>
+                        <li><strong>Large:</strong> ≥ 66 inches (1,338 models | Avg: 748.88 kWh/year)</li>
+                    </ul>
+                </li>
+                <li><strong>Key Metrics Tracked:</strong> Labelled Annual Energy Consumption (kWh/year), Screen Size (inch).</li>
+            </ul>
+        </section>
+
+        <!-- Course context & technology stack -->
+        <section class="content-section">
+            <h2>Academic Background & Tools</h2>
+            <p>This project was developed for <strong>COS30045 Data Visualisation</strong> at <strong>Swinburne University of Technology</strong>. Built using:</p>
+            <ul>
+                <li><u>HTML5 & CSS3</u> for responsive, accessible web structure and custom layout styling</li>
+                <li><u>KNIME Analytics Platform</u> for data cleaning, aggregation, and rule-based categorization</li>
+                <li><u>Python (Pandas & Matplotlib)</u> for dataset validation and chart generation</li>
+                <li><u>Git & GitHub</u> for version management and web hosting</li>
+            </ul>
+        </section>
+s
+    </main>
+WWW
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hua Trieu Vi | EnergyWatch AU Project</p>
+        <p>Generative AI Acknowledgement: Gemini was used for helping construct the content, code debugging.</p>
+    </footer>
+</body>
+</html>

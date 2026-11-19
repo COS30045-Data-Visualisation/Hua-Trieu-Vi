@@ -1,0 +1,212 @@
+/* Reset margins & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfaf2;
+    color: #27150c;
+    line-height: 1.6;
+}
+
+/* Header & navigation bar */
+header {
+    background-color: #5c2c16;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nav-brand a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fef08a;
+    font-weight: bold;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #fef3c7;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #d97706;
+    color: #ffffff;
+}
+
+/* Main page layout */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Hero banner */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #fef3c7;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #d97706;
+}
+
+.hero h1 {
+    color: #5c2c16;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #451a03;
+    font-size: 1.05rem;
+}
+
+/* Content section cards */
+.content-section {
+    background-color: #ffffff;
+    border: 1px solid #e5dec9;
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    color: #5c2c16;
+    margin-bottom: 12px;
+}
+
+.content-section p, 
+.content-section ul, 
+.content-section ol {
+    margin-bottom: 12px;
+}
+
+.content-section ul, 
+.content-section ol {
+    padding-left: 22px;
+}
+
+/* Highlighted yellow box */
+.highlight-box {
+    background-color: #fffbeb;
+    border-color: #fde047;
+}
+
+/* Story stage tags */
+.story-stage {
+    position: relative;
+}
+
+.stage-tag {
+    display: inline-block;
+    background-color: #fef3c7;
+    color: #d97706;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #fde047;
+}
+
+/* Grid layout for stat cards */
+.stats-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Stat card box */
+.stat-card {
+    background-color: #ffffff;
+    border: 1px solid #e5dec9;
+    border-top: 4px solid #d97706;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1.6rem;
+    color: #d97706;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 0.85rem;
+    color: #5c2c16;
+    font-weight: bold;
+}
+
+/* Tables and images */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 10px 12px;
+    border: 1px solid #e5dec9;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #fef3c7;
+    color: #5c2c16;
+}
+
+.chart-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+/* Footer style */
+footer {
+    background-color: #5c2c16;
+    color: #fef3c7;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
