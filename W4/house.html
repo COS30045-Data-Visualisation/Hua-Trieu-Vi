@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4.1 - SVG House and Garden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin-top: 50px;
+        }
+        svg {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+        .window {
+            fill: #cceeff;
+            stroke: #444;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Exercise 4.1: Draw SVGs</h2>
+
+    <!-- SVG Container -->
+    <svg width="400" height="400" viewBox="0 0 400 400">
+        <!-- Sky Background -->
+        <rect x="0" y="0" width="400" height="250" fill="#a0c4ff" />
+
+        <!-- Grass Background -->
+        <rect x="0" y="250" width="400" height="150" fill="#2d6a4f" />
+
+        <!-- Sun -->
+        <circle cx="320" cy="80" r="35" fill="#ffb703" />
+
+        <!-- Tree Trunk -->
+        <rect x="70" y="180" width="20" height="90" fill="#8b5a2b" />
+        <!-- Tree Foliage -->
+        <circle cx="80" cy="160" r="30" fill="#38b000" />
+
+        <!-- Garden Path (using path element) -->
+        <path d="M 160 400 Q 180 320 200 270" stroke="#ffb703" stroke-width="12" fill="none" />
+
+        <!-- House Body -->
+        <rect x="120" y="170" width="160" height="110" fill="#bc6c25" />
+
+        <!-- House Roof (using polygon) -->
+        <polygon points="100,170 200,90 300,170" fill="#dda15e" />
+
+        <!-- Front Door -->
+        <rect x="175" y="210" width="45" height="70" fill="#7f4f24" />
+        <circle cx="210" cy="245" r="3" fill="#000" />
+
+        <!-- Group element <g> with transform translate for the two windows (Step 4) -->
+        <g transform="translate(135, 185)">
+            <!-- Left Window -->
+            <rect class="window" x="0" y="0" width="30" height="30" />
+            <!-- Right Window -->
+            <rect class="window" x="85" y="0" width="30" height="30" />
+        </g>
+
+        <!-- Added Flower in the Garden -->
+        <g transform="translate(330, 290)">
+            <!-- Stem -->
+            <rect x="-1" y="0" width="2" height="30" fill="green" />
+            <!-- Petals -->
+            <circle cx="0" cy="-6" r="3" fill="#e63946" />
+            <circle cx="6" cy="-2" r="3" fill="#e63946" />
+            <circle cx="3" cy="5" r="3" fill="#e63946" />
+            <circle cx="-4" cy="5" r="3" fill="#e63946" />
+            <circle cx="-5" cy="-2" r="3" fill="#e63946" />
+            <!-- Flower Center -->
+            <circle cx="0" cy="0" r="5" fill="#ffb703" />
+        </g>
+        <!-- "House" Text -->
+        <text x="310" y="235" font-size="18" font-weight="bold" fill="#000">House</text>
+    </svg>
+
+</body>
+</html>

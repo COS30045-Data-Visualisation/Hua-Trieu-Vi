@@ -1,0 +1,10 @@
+Generative AI Declaration – Exercises 4–6
+
+Exercise 4
+I used Google Gemini to help me organize the project content and troubleshoot parts of my code. I reviewed the suggestions and made changes to suit my project. The final work is my own.
+
+Exercise 5
+I used generative AI to help me understand parts of the project and troubleshoot my code. I reviewed the suggestions and adapted them to suit my work. The final work is my own.
+
+Exercise 6
+I used generative AI to help me understand some parts of the project and work through coding problems. I checked the suggestions and adjusted them for my project. The final work is my own.
